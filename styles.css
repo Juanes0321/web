@@ -15,11 +15,12 @@ h1{
     background: #00f;
     text-align: center;
     width: 280px;
-    height: 250px;
+    height: 300px;
     box-shadow: 0px 0px 35px #0006;
     border-radius: 10px;
     display: inline-block;
     margin: 20px;
+    
 }
 
 .card_2{
@@ -56,3 +57,28 @@ h1{
     color: #000;
     padding: 1px;
 }
+
+.leccion1{
+    font-size: 25px;
+    background: linear-gradient(blue,white);
+    font-family: cursive;
+}
+
+.leccion2{
+    font-size: 25px;
+    background: linear-gradient(white,#efa);
+    font-family: cursive;
+}
+
+.leccion3{
+    font-size: 25px;
+    background: linear-gradient(red,white);
+    font-family: cursive;
+}
+
+.link{
+    font-size: 13px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: right;
+}
+

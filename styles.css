@@ -1,0 +1,81 @@
+body{
+    background: #000;
+}
+
+.titulo{
+    color: #f39f18;
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+    font-family: cursive;
+}
+
+
+.girasol_animado {
+    width: 200px;
+    animation: balancear 2s ease-in-out infinite;
+    transform-origin: bottom center;
+}
+
+@keyframes balancear {
+    0%  { transform: rotate(0deg); }
+    50% { transform: rotate(15deg); }
+    100% { transform: rotate(0deg); }
+}
+
+h2{
+    color: #f93;
+}
+
+h4{
+    color: #f39f18;
+}
+
+.decoracion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    flex-wrap: wrap; /* permite que NO se rompa en pantallas pequeñas */
+}
+
+.texto_cumple {
+    width: 55%;      /* mantiene la proporción */
+    min-width: 250px; /* evita que el texto se achique demasiado */
+    text-align: justify;
+    border: 1px dashed #f93;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 15px #222;
+}
+
+.girasol_dec {
+    width: 550px;     /* tamaño fijo */
+    max-width: 100%;  /* para móviles */
+    border-radius: 10px;
+}
+
+.imagen_encima {
+    position: absolute;
+    top: 170%;        /* posición vertical */
+    left: 25%;       /* posición horizontal */
+    transform: translate(-50%, -50%); /* centra la imagen encima */
+    width: 170px;    /* ajusta el tamaño a tu gusto */
+    pointer-events: none; /* evita que bloquee clics (opcional) */
+    animation: expandir 2.5s ease-in-out infinite;
+}
+
+/* Animación */
+@keyframes expandir {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.15); /* crecimiento */
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+
